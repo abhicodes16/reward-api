@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/reward-api", {
+mongoose.connect("mongodb+srv://abhi_lapsi:Anikesh@16@cluster0.te3od.mongodb.net/reward-db?retryWrites=true&w=majority", {
+    useNewUrlParser:true,
     useCreateIndex:true,
-    useFindAndModify:true,
+    useFindAndModify:false,
     useUnifiedTopology:true,
-    useFindAndModify:false
 }).then(() => {
     console.log("Connection is successful...");
 }).catch((e) => {
