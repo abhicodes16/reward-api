@@ -8,7 +8,11 @@ const merchantSchema = new mongoose.Schema({
     },
     address : {
         type : String,
-        require: true
+        type : String,
+    },
+    location : {
+        type : String,
+        type : String,
     },
     points : {
         type : Number,
