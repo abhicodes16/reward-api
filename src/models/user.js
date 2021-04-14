@@ -12,13 +12,13 @@ const userSchema = new mongoose.Schema({
         required : true,
     },
     clubs : {
-        type : Number,
+        type : String,
     },
     rewards : {
-        type : Number,
+        type : String,
     },
     deals : {
-        type : Number,
+        type : String,
     },
 
 })
